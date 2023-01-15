@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TokoNyaDia2.Entities;
 
-namespace TokoNyaDia2
+namespace TokoNyaDia2.Repositories
 {
     public class AppDbContext : DbContext
     {

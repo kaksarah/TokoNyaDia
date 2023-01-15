@@ -1,4 +1,5 @@
 ﻿using TokoNyaDia2;
+using TokoNyaDia2.Repositories;
 
 public class Program
 {

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace TokoNyaDia2
+namespace TokoNyaDia2.Entities
 {
     [Table(name: "customer", Schema = "dbo")]
     public class Customer
@@ -31,6 +31,11 @@ namespace TokoNyaDia2
 
         [Display(Name = "Email")]
         public string CustomerEmail { get; set; }
+
+        public override string ToString()
+        {
+            return $"{nameof(CustomerId)} : {CustomerId}, {nameof(CustomerName)} : {CustomerName}, {nameof(CustomerPhone)} : {CustomerPhone}, {nameof(CustomerAddress)} : {CustomerAddress}, {nameof(CustomerEmail)} : {CustomerEmail}";
+        }
 
     }
 }

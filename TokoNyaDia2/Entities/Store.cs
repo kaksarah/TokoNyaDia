@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TokoNyaDia2
+namespace TokoNyaDia2.Entities
 {
     [Table(name: "store", Schema = "dbo")]
     public class Store
@@ -30,5 +30,10 @@ namespace TokoNyaDia2
 
         [Display(Name = "Siup Number")]
         public int SiupNumber { get; set; }
+
+        public override string ToString()
+        {
+            return $"{nameof(StoreId)} : {StoreId}, {nameof(StoreName)} : {StoreName}, {nameof(StoreAddress)} : {StoreAddress}, {nameof(StorePhone)} : {StorePhone}, {nameof(SiupNumber)} : {SiupNumber}";
+        }
     }
 }

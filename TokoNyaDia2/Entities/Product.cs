@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TokoNyaDia2
+namespace TokoNyaDia2.Entities
 {
     //[Table(name: "m_product")]
     //public class Product
